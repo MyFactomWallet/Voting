@@ -108,7 +108,7 @@ class ButtonAppBar extends React.Component {
 
 					<Typography variant="h6" className={classes.flex}>
 						<Link className={classes.menuText} to="/">
-							MyFactomWallet
+							Factom On-Chain Voting
 							{testnetActive && (
 								<span className={classes.testnetHeader}>
 									&nbsp;&nbsp;TESTNET
@@ -116,13 +116,13 @@ class ButtonAppBar extends React.Component {
 							)}
 						</Link>
 					</Typography>
-					<Button
-						href="#/"
+					{/* <Button
+						href="#/wallet"
 						onClick={this.handleWallet}
 						className={classes.menuText}
 					>
 						Wallet
-					</Button>
+					</Button> */}
 					<React.Fragment>
 						<Button
 							aria-owns={voteAnchorEl ? 'simple-vote-menu' : null}
@@ -142,7 +142,7 @@ class ButtonAppBar extends React.Component {
 							<MenuItem
 								onClick={this.handleVoteClose}
 								component={Link}
-								to={'/vote'}
+								to={'/'}
 							>
 								View Polls
 							</MenuItem>

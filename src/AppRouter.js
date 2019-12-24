@@ -23,9 +23,10 @@ class AppRouter extends Component {
 		return (
 			<Router>
 				<React.Fragment>
+					<Route exact path="/" component={VoteListing} />
 					<Route
 						exact
-						path="/"
+						path="/wallet"
 						render={() =>
 							readyToManageWallet && !isWalletEmpty() ? (
 								<WalletManager />
@@ -36,7 +37,6 @@ class AppRouter extends Component {
 							)
 						}
 					/>
-
 					<Route exact path="/vote" component={VoteListing} />
 					<Route exact path="/viewVote" component={VoteTabContent} />
 					<Route exact path="/createVote" component={CreateVoteStepper} />
