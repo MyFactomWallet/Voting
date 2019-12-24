@@ -1,4 +1,4 @@
-View [MyFactomWallet](https://myfactomwallet.com)
+View [Factom On-Chain Voting](https://vote.myfactomwallet.com)
 
 ## Table of Contents
 
@@ -7,19 +7,15 @@ View [MyFactomWallet](https://myfactomwallet.com)
 
 ## Getting Started
 
-Run MyFactomWallet locally:
+Run Factom On-Chain Voting locally:
 
 ```bash
-git clone https://github.com/MyFactomWallet/MyFactomWallet.git
-cd MyFactomWallet
+git clone https://github.com/MyFactomWallet/Voting.git
+cd Voting
 npm ci
 HTTPS=true npm start #Linux, macOS (Bash)
 set HTTPS=true&&npm start #Windows (cmd.exe)
 ```
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-Many thanks to [MyEtherWallet](https://github.com/MyEtherWallet/) for inspiration.
 
 ## Tools
 
